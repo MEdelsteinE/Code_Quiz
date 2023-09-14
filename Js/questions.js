@@ -1,19 +1,19 @@
+//This is the file containing all the answers and questions for the quiz
 var questions = [
     {
         question: 'What does HTML stand for?',
-        choices: ['HperText Marker Language ', 'HyperText Madeup Language ', 'HyperText Markup Language', 'HyperText Makeup Language'],
+        choices: ['HperText Marker Language', 'HyperText Madeup Language ', 'HyperText Markup Language', 'HyperText Makeup Language'],
         answer: 'HyperText Markup Language'
     },
 
     {
-        question:'What does CSS stand for?',
+        question: 'What does CSS stand for?',
         choices: ['Code Style Sheet', 'Cascading Style Sheet', 'Create Style Sheet', 'Cascading Syntax Sheet'],
         answer: 'Cascading Style Sheet'
-
     },
 
     {
-        question:'What does JS stand for?',
+        question: 'What does JS stand for?',
         choices: ['JavaScience', 'JavaSheet', 'JavaStyle', 'JavaScript'],
         answer: 'JavaScript'
     },
@@ -44,7 +44,7 @@ var questions = [
 
     {
         question: 'Where do you link a JavaScript file a HTML file?',
-        choices: ['Above the Head Element', 'Under the Closing HTML Tag', 'At the bottom above the Closing Body Tag', 'In a <p> element'  ],
+        choices: ['Above the Head Element', 'Under the Closing HTML Tag', 'At the bottom above the Closing Body Tag', 'In a <p> element'],
         answer: 'At the bottom above the Closing Body Tag'
     },
 
@@ -60,4 +60,4 @@ var questions = [
         answer: '_blank'
     }
 
-]
+];

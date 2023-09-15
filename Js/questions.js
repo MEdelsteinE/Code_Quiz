@@ -1,15 +1,15 @@
 //This is the file containing all the answers and questions for the quiz
 var questions = [
     {
-        question: 'What does HTML stand for?',
-        choices: ['HperText Marker Language', 'HyperText Madeup Language ', 'HyperText Markup Language', 'HyperText Makeup Language'],
-        answer: 'HyperText Markup Language'
+        question: 'What is an Object?',
+        choices: ['A string', 'A selector for Styling', 'A collection of properties', 'An HTML property'],
+        answer: 'A collection of properties'
     },
 
     {
-        question: 'What does CSS stand for?',
-        choices: ['Code Style Sheet', 'Cascading Style Sheet', 'Create Style Sheet', 'Cascading Syntax Sheet'],
-        answer: 'Cascading Style Sheet'
+        question: 'What is a string?',
+        choices: ['An object', 'A querySelector', 'A function', 'A series of characters'],
+        answer: 'A series of characters'
     },
 
     {
@@ -19,45 +19,17 @@ var questions = [
     },
 
     {
-        question: 'Where does the Title element appear on the  Web Application?',
-        choices: ['The Page tab', 'In the header', 'At the bottom of the page', 'In the address bar'],
-        answer: 'The Page tab'
+        question: 'What is a function callback?',
+        choices: ['A function that executes after another function has been executed', 'A set of statements that performs a task', 'An argument', 'Hoisting'],
+        answer: 'A function that executes after another function has been executed'
     },
 
     {
-        question: 'How do you select a class in CSS?',
-        choices: ['With the hashtag selector', 'With a dollar sign selector', 'With the dot selector', 'With an Exclamation Point'],
-        answer: 'With the dot selector'
-    },
-
-    {
-        question: 'How do you select an id in CSS?',
-        choices: ['With the hashtag selector', 'With the dot selector', 'With an ampersan', 'With a Percent Symbol'],
-        answer: 'With the hashtag selector'
-    },
-
-    {
-        question: 'How do you set Flex in CSS?',
-        choices: ['CSS: Flex', 'Display: CSS_Flex', 'Display: flex', 'Flex: display'],
-        answer: 'Display: flex'
-    },
-
-    {
-        question: 'Where do you link a JavaScript file a HTML file?',
-        choices: ['Above the Head Element', 'Under the Closing HTML Tag', 'At the bottom above the Closing Body Tag', 'In a <p> element'],
-        answer: 'At the bottom above the Closing Body Tag'
-    },
-
-    {
-        question: 'Where do you link a CSS file in an HTML file?',
-        choices: ['Above the DOCTYPE Declaration', 'Above the title property', 'In a <div> Element', 'With an ID'],
-        answer: 'Above the title property'
-    },
-
-    {
-        question: 'How do you have a link open a new tab in the browser?',
-        choices: ['Not Possible', '_blank', 'With another HyperLink', 'In the JS File'],
-        answer: '_blank'
+        question: 'What is hoisting?',
+        choices: ['The liink to a JS file in the HTML file', 'The link to a CSS file in the HTML File', 'When variables or functions are moved to the top of the scope', 'Changing the inner text of an HTML property'],
+        answer: 'When variables or functions are moved to the top of the scope'
     }
-
 ];
+
+    
+    

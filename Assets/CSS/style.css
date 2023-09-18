@@ -1,39 +1,51 @@
-header {
-    /*This is jsut for flavor and color I like this desing*/
+ body {
     display: flex;
-    background-color: #ffae42;
-    color: blueviolet;
-    border-style: outset;
-    border-color: blueviolet;
-    border-radius: 10px;
-    border-width: 10px;
-    width: fit-content;
-    font-weight: 600;
-}
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+ }
 
-#instructions {
-    display: flex;
-    color: red;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: x-large;
-}
+ .hide {
+    display: none;
+ }
 
-.title {
-    color: purple;
+ p {
+   color: red;
+   font-size: x-large;
+   font-weight: 600;
+ }
+
+ h1 {
+   display: flex;
+   justify-content: center;
+   color: purple;
+ }
+
+ .showTime {
+   display: flex;
+   justify-content: center;
+ }
+
+ button {
+   cursor: pointer;
+   border-style: outset;
+   border-color: goldenrod;
+   border-radius: 50px;
+   background-color: blueviolet;
+ }
+
+ .choices {
     display: flex;
-    justify-content: center;
-    font-size: 100px;
+    flex-direction: column;
     position: relative;
+ }
 
-}
+ .choices button {
+    padding: 6px 0;
+    margin-bottom: 5px;
+ }
 
-button {
-    background-color: blueviolet;
-    border-style: outset;
-    border-radius: 10px;
-    width: 100px;
-    height: 50px;
-    
-}
-    
+ .choices .answer-alert {
+    position: absolute;
+    bottom: 0;
+ }

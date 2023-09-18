@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Assets/CSS/style.css">
-  <title>Code Quiz</title>
+  <title>JavaScript Quiz</title>
 </head>
 
 <body>
@@ -13,16 +13,24 @@
     <a href="highscores.HTML" target="_blank">Check The LeaderBoard</a>
   </header>
   <main>
-    <section id="Quiz-Area">
-      <div id="instructions">
-        <p>There are 10 questions to be answered. This quiz is timed so please answer as quickly as possible.</p>
-      </div>
-      <h1 class="title">!Begin The Quiz!</h1>
-      <button class="begin">Start!</button>
+    <h1>Start the Quiz</h1>
+    <p>This Quiz is timed. For each incorrect answer you will loose time. Good Luck!</p>
 
+    <h2 class="showTime ">Time: <span id="time">60</span></h2>
 
+    <button id="begin" class="begin">Begin!</button>
 
-    </section>
+    <div class="question-wrap hide">
+      <h2>Question</h2>
+      <div class="choices"></div>
+      <span class="answer-alert hide">Correct!</span>
+    </div>
+
+    <div class="hide" id="score-form">
+      <input id="name" type="text" placeholder="Please Enter your Initials">
+      <button>Submit</button>
+    </div>
+    
 
 
   </main>

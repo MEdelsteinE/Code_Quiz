@@ -32,7 +32,8 @@
    border-color: goldenrod;
    border-radius: 50px;
    background-color: blueviolet;
- }
+   color: white;
+   }
 
  .choices {
     display: flex;

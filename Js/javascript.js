@@ -7,7 +7,8 @@ var beginBtn = document.querySelector('#begin');
 var questWrap = document.querySelector('.question-wrap');
 var questionTextEl = document.querySelector('.question-wrap h2');
 var choicesDiv = document.querySelector('.choices');
-var answerAlert = document.querySelector('.answer-alert')
+var answerAlert = document.querySelector('.answer-alert');
+var scoreForm = document.querySelector('#score-form');
 var time = 60;
 var questionIndex = 0;
 var question;
@@ -54,7 +55,6 @@ function counter() {
 function checkAnswer(e) {
     var correctAnswer = questions[questionIndex].answer
     var correctClicked = e.target.textContent
-    console.log(correctAnswer);
 
     if (correctAnswer === correctClicked) {
         answerAlert.innerText = 'Right!';
@@ -89,9 +89,11 @@ beginBtn.addEventListener('click', beginGame);
 
 function endGame() {
     clearInterval(timer)
-
-
+    //need to make score form appear
+    
 }
+
+
 
 
 

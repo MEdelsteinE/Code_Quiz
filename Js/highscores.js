@@ -1,30 +1,13 @@
 var scoreDisplay = document.querySelector('#score-output');
-var form = document.querySelector('#score-form');
-var score = localStorage.getItem('score');
+var scoreHistory = JSON.parse(localStorage.getItem('history')) || []
 
 function displayScore() {
-    
-    scoreDisplay.innerText = 'Your Score:' + score;
 
-    function saveLeaderboard() {
-        var nameInput = document.querySelector('#name');
-        var name = nameInput.value;
-
-        function getHighScores() {
-            return JSON.parse(localStorage.getItem('highscores')) || [];
-        }
-
-        var highscores = getHighScores();
-
-        highscores.push({
-            name: name,
-            score: score
-    })
-    
-    localStorage.setItem('highscores', JSON.stringify(highscores));
-
+    for (var i = 0; i < scoreHistory.length; i++) {
+        var liEl = document.createElement("li")
+        liEl.textContent = scoreHistory[i].name + " - " + scoreHistory[i].time
+        scoreDisplay.appendChild(liEl)
     }
-
-    displayScore();
-    form.addEventListener('submit', saveLeaderboard)
 }
+
+displayScore();

@@ -1,3 +1,4 @@
+// Selectors
 var headerEl = document.querySelector('header');
 var honeEl = document.querySelector('h1');
 var instructions = document.querySelector('p');
@@ -9,13 +10,17 @@ var questionTextEl = document.querySelector('.question-wrap h2');
 var choicesDiv = document.querySelector('.choices');
 var answerAlert = document.querySelector('.answer-alert');
 var scoreForm = document.querySelector('#score-form');
+var scoreBtn = document.querySelector('#submit-score');
+var nameEL = document.querySelector('#name');
+// functional variables
+var scoreHistory = JSON.parse(localStorage.getItem('history')) || []
 var time = 60;
 var questionIndex = 0;
 var question;
 var timer;
 
 function beginGame() {
-    // showTimeEl.classList.remove('hide');
+
     beginBtn.classList.add('hide');
     questWrap.classList.remove('hide');
     instructions.classList.add('hide');
@@ -32,7 +37,7 @@ function showQuestion() {
     choicesDiv.innerHTML = '';
 
     question.choices.forEach(function (choice) {
-        //choicesDiv.insertAdjacentHTML('beforeend', '<button class="">' + choice + '</button>');
+
         var btn = document.createElement('button');
         btn.textContent = choice
 
@@ -79,19 +84,25 @@ function checkAnswer(e) {
 }
 
 beginBtn.addEventListener('click', beginGame);
-//choicesDiv.addEventListener('click', checkAnswer)
 
-// function displayLeadeboard() {
-//     localStorage.setItem('score', time);
-//     window.location = './highscores.html';
-
-// }
-
+//This moves the end of the game to the Enter Intials page
 function endGame() {
     clearInterval(timer)
-    //need to make score form appear
-    
+    questWrap.classList.add('hide');
+    scoreForm.classList.remove('hide');
+
 }
+//This is s an event listener to store users score in local storage
+scoreBtn.addEventListener('click', function () {
+    var name = nameEL.value
+    var newPlayer = { name, time }
+
+    scoreHistory.push(newPlayer)
+
+    localStorage.setItem('history', JSON.stringify(scoreHistory));
+    window.location = './highscores.html';
+});
+
 
 
 
